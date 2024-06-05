@@ -1,0 +1,59 @@
+Stream is continuous flow of event Eg: GPD location steeam of Uber users, continuous flow of tweets is stream of Tweets, web logs,social media websites
+
+
+
+
+Spark Streaming
+
+Spark Streaming is an extension of the core Spark API that enables processing of live data stream which is
+ highly scalable,high-throughput.
+Data can be ingested from many sources like Kafka, Flume, Kinesis ...
+
+Internally, Spark streaming receives live input data streams and divides the data into Micro-batches, which are then
+processed by the Spark engine to generate the final stream of results in batches.
+The processed data can be pushed out to file systems, databases,live dashboards.
+
+
+Its key abstraction is a Discretized Stream or, in short, a DStream,
+ which represents a stream of data divided into small batches. DStreams are built on RDDs, 
+Spark’s core data abstraction. 
+
+Need for Spark Streaming:
+
+1. Monitoring and Alerting: 
+
+For example, you could use it to track the number of errors in a web application or the number of requests per second to a server.
+
+For example, you could create a Spark Streaming job that reads the logs from your web application and counts the number of errors.
+ If the number of errors exceeds a certain threshold, you could send an alert to your team.
+ 
+2. Real-time analytics:
+you could use to track the social media posts or the price of stocks.
+you can create a spark streaming jobs that can read tweets from the twitter and calculates sentiments of each tweet.this information can be used to track
+the public's reaction  or to promote a product.
+
+3. Machine Learning:
+you can use spark streaming to train and deploy machine learning models on streaming data.
+you can use it to predict customer churn or fraud.
+
+For example, you could create a Spark Streaming job that reads the price of stocks from a 
+financial data feed and trains a machine learning model to predict future prices. 
+You could then use this model to make investment decisions.
+
+Here are some of the benefits of using Spark Streaming in the cloud:
+
+Scalability:
+cloud providers offers a wide range of resources ,so you can scale your spark streaming jobs up or down as needed.
+
+Real-time processing: 
+Spark Streaming allows you to process and analyze data in near real-time, 
+which enables you to make decisions and take actions quickly based on the data.
+
+High fault tolerance: 
+Spark Streaming provides built-in fault tolerance by replicating the data across multiple nodes in the cluster. 
+If a node fails, the data is automatically reprocessed on another node, ensuring that no data is lost and processing is not interrupted.
+
+Integration with other Spark components: Spark Streaming integrates seamlessly with other Spark components,
+ such as Spark SQL, MLlib, and GraphX. This allows you to perform complex analytics on real-time data.
+
+
